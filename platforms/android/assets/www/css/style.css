@@ -1,0 +1,227 @@
+/* Empty. Add your own CSS if you like */
+
+.main-pane{
+  background-image: url("../img/pttn.png");
+  background-size: 100%;
+}
+
+.logo-mp{
+  height: 300px;
+  z-index: 10000;
+  background-size: 170px;
+  background-repeat: no-repeat;
+  background-image: url("../img/logo.png");
+  opacity: 0.9;
+  background-position: center;
+  margin: 20% 0% 0% 0%;
+  text-align: center;
+}
+
+.title-mp{
+  color: #FFF;
+  font-family: 'Montserrat';
+  text-transform: lowercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 32%;
+  opacity: 0.9;
+}
+
+.footer-mp{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 0px 5px 0px 5px;
+}
+
+.button-magister{
+  background: #A38348;
+  margin: 20px 0px 10px 0px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FAE9CA;
+  opacity: 0.9;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 18px;
+  webkit-appearance: none;
+}
+
+.button-magister:hover{
+  color: #FAE9CA;
+}
+
+.button-magister:active, .button-magister.activated{
+  background: #987943;
+}
+
+.color-bar{
+  height: 20px;
+  width: 100%;
+  background: #999000;
+  z-index: 10010;
+  margin-bottom: 10px;
+}
+
+.toggle.toggle-mg input:checked + .track {
+  border-color: #D9B66E;
+  background-color: #D9B66E; }
+
+.toggle-small .toggle-mg input:checked + .track {
+  background-color: rgba(221, 221, 221, 0.5); }
+
+.toggle-small .toggle-mg input:checked + .track .handle {
+  background-color: #D9B66E; }
+
+.sub-optionbtn{
+  width: 100%;
+  color: #D9B66E;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.bar-magister{
+  background: #D9B66E;
+}
+
+.bar-magister:active{
+  background: #987943;
+}
+
+.map-fixed-marker-magister{
+  font-size: 45px;
+  color: #D9B66E;
+  position: absolute;
+  top: 45%;
+  left: 47%;
+}
+
+.sub-item{
+  padding: 40px 25px;
+  background: #D9B66E;
+  color: #FFF !important;
+  border: #D9B66E;
+}
+
+.sub-item-h2{
+  color: #FFF;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sub-item-p{
+  color: #FFF !important;
+  font-size: 16px !important;
+}
+
+#sub-map {
+  width: 100%;
+  height: 300px;
+  opacity: 0.5;
+}
+
+#per-map {
+  width: 100%;
+  height: 200px;
+  opacity: 0.5;
+}
+
+
+/* Messaging View */
+.messaging-view .scroll {
+  padding: 10px 0 50px !important;
+}
+
+.messaging-view .messages {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-align-content: center !important;
+  -ms-flex-line-pack: center !important;
+  align-content: center !important;
+  -webkit-box-align: center !important;
+  -moz-box-align: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  margin-bottom: 20px !important;
+}
+.messaging-view .messages .message {
+  -webkit-box-flex: 1 !important;
+  -moz-box-flex: 1 !important;
+  -webkit-flex: 1 1 auto !important;
+  -ms-flex: 1 1 auto !important;
+  flex: 1 1 auto !important;
+  padding: 10px !important;
+  -webkit-transition: all 250ms ease-in-out !important;
+  transition: all 250ms ease-in-out !important;
+  overflow: hidden !important;
+  text-align: left !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.messaging-view .time {
+  -webkit-box-flex: 0 !important;
+  -moz-box-flex: 0 !important;
+  -webkit-flex: 0 1 auto !important;
+  -ms-flex: 0 1 auto !important;
+  flex: 0 1 auto !important;
+  -webkit-align-self: auto !important;
+  -ms-flex-item-align: auto !important;
+  align-self: auto !important;
+  width: 120px !important;
+  text-align: center !important;
+  padding: 0 0 0 0 !important;
+  -webkit-transition: all 250ms ease-in-out !important;
+  transition: all 250ms ease-in-out !important;
+  -webkit-transform: translate3d(10px, 0, 0) !important;
+  -moz-transform: translate3d(10px, 0, 0) !important;
+  transform: translate3d(10px, 0, 0) !important;
+}
+
+.messaging-view .time.slide-right {
+  -webkit-transform: translate3d(130px, 0, 0) !important;
+  -moz-transform: translate3d(130px, 0, 0) !important;
+  transform: translate3d(130px, 0, 0) !important;
+}
+
+.messaging-view .messages.other .message {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+  text-align: right !important;
+}
+.messaging-view .messages.other .message.slide-right {
+  -webkit-transform: translate3d(120px, 0, 0) !important;
+  -moz-transform: translate3d(120px, 0, 0) !important;
+  transform: translate3d(120px, 0, 0) !important;
+}
+.messaging-view .messages.other span {
+  color: black !important;
+  background-color: #C7C7CC !important;
+}
+
+.messaging-view span {
+  background: #007AFF !important;
+  display: inline-block !important;
+  color: white !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  text-align: left !important;
+  max-width: 240px !important;
+}

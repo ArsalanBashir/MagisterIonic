@@ -1,0 +1,38 @@
+<ion-view style="" id="t_dash" title="{{name}}'s Dashboard">
+    <ion-content class="has-header" padding="true">
+        <div style="width: 285px; height: 23px;" class="spacer"></div>
+        <div style="color: rgb(0, 0, 0); text-align: center;" id="arsalansDashboard-markdown1">
+            <p>You don't have any session requests
+                <strong>yet</strong>.</p>
+        </div>
+        <div style="" class="list card">
+            <div class="item item-divider">Potential Earnings</div>
+            <div class="item item-body">
+                <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;">
+                    <iframe src="https://www.youtube.com/embed/lTLTs2ZA2JQ?rel=0&amp;showinfo=0" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" height="315" width="560"></iframe>
+                </div>
+                <div style="color: rgb(0, 0, 0);" id="arsalansDashboard-markdown2">
+                    <p>Based on your location, we estimate you can earn about
+                        <strong>INR {{estimate}} </strong>weekly.</p>
+                </div>
+            </div>
+        </div>
+        <ion-list style="" ng-show="HasRequests">
+            <ion-item style="" class="item-thumbnail-left">
+                <img>
+                <h2>Title</h2>
+                <p>Item</p>
+            </ion-item>
+            <ion-item style="" class="item-thumbnail-left">
+                <img>
+                <h2>Title</h2>
+                <p>Item</p>
+            </ion-item>
+            <ion-item style="" class="item-thumbnail-left">
+                <img>
+                <h2>Title</h2>
+                <p>Item</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

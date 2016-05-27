@@ -1,0 +1,20 @@
+<ion-header-bar>
+  <a class="save-settings-button button button-clear button-positive" href="/#/s_menu/student/dash"><i class="icon ion-chevron-left"></i> Back</a>
+  <h1 class="title">{{subjectname}}</h1>
+</ion-header-bar>
+<ion-view style="" id="page11" title="Search Results">
+    <ion-content class="has-header" padding="false">
+        <div id="sub-map" data-tap-disabled="true"></div>
+        <ion-list style="">
+            <ion-item style="" class="item-divider">Top Teachers</ion-item>
+            <div ng-repeat="(t_name, t_info) in tuitors">
+            <a class="item item-icon-right" href="/#/teacher/{{t_info['id']}}">
+                <h2>{{t_name}}</h2>
+                <p ng-if="t_info['grades'][0] != t_info['grades'][1]">Charges <strong>INR {{t_info['rate']}}/hour</strong> for <strong>grades {{t_info['grades'][0]}} to {{t_info['grades'][1]}}.</strong></p>
+                <p ng-if="t_info['grades'][0] === t_info['grades'][1]">Charges <strong>INR {{t_info['rate']}}/hour</strong> for <strong>grade {{t_info['grades'][0]}}.</strong></p>
+                <i class="icon ion-chevron-right"></i>
+            </a>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

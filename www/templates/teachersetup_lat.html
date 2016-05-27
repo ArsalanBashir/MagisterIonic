@@ -1,0 +1,42 @@
+<ion-header-bar>
+  <a class="save-settings-button button button-clear button-positive" ui-sref="t_menu.teacher_dash"><i class="icon ion-ios-arrow-back"></i> Back</a>
+  <h1 class="title">Setup your Profile</h1>
+  <button class="save-settings-button button button-clear button-positive" ng-disabled="ShouldBeDisabled()" ng-click="SaveSettings()"><i class="icon ion-ios-arrow-forward"></i></button>
+</ion-header-bar>
+<ion-nav-view>
+<ion-view title="Setup your Profile">
+    <ion-content overflow-scroll="true" padding="false" class="has-header">
+        <form class="list">
+            <ion-item class="item-divider">Basic Info</ion-item>
+            <label class="item item-input">
+                <span class="input-label">Hourly Rate</span>
+                <input type="number" placeholder="INR" min="0" ng-model="data.rate" required="true">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Hours per Day</span>
+                <input type="number" placeholder="3" min="0" max="6" ng-model="data.hpd" required="true">
+            </label>
+            <label class="item item-input item-select">
+              <div class="input-label">
+                Subjects Taught
+              </div>
+              <select ng-model="data.subject">
+                <option ng-repeat="sub in sub_data">{{sub}}</option>
+              </select>
+            </label>
+            <label class="item item-input item-select">
+              <div class="input-label">
+                Grades Taught
+              </div>
+              <select ng-model="data.grade">
+                <option ng-repeat="grade in grades_data">{{grade}}</option>
+              </select>
+            </label>
+            <ion-item class="item-divider">Availability Days</ion-item>
+            <div ng-repeat="day in av_data">
+              <ion-checkbox ng-model="day.val">{{day.label}}</ion-checkbox>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>
+</ion-nav-view>

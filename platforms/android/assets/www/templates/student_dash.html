@@ -1,0 +1,14 @@
+<ion-view style="" id="student_dash" title="Select Subject">
+    <ion-content class="has-header" padding="false">
+      <div class="list">
+        <div ng-repeat="(sub_name, nsub_teachers) in subs">
+          <a class="item sub-item item-icon-right" ng-if="nsub_teachers > 0" href="/#/subject/{{sub_name}}/{{nsub_teachers}}">
+            <h2 class="sub-item-h2">{{sub_name}}</h2>
+            <p class="sub-item-p" ng-if="nsub_teachers > 1">{{nsub_teachers}} teachers available in your area.</p>
+            <p class="sub-item-p" ng-if="nsub_teachers === 1">{{nsub_teachers}} teacher available in your area.</p>
+            <i style="padding-right: 10px;" class="icon ion-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>

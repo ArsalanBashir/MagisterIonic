@@ -1,0 +1,26 @@
+<ion-side-menus style="" enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="t_menu"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+        <ion-header-bar class="bar-stable">
+            <div class="title">Menu</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-left has-header">
+            <ion-list style="">
+                <ion-item style="" menu-close="" ui-sref="t_menu.teacher_dash">Home</ion-item>
+                <ion-item style="" menu-close="" ui-sref="t_setup_lat">Settings</ion-item>
+                <ion-item style="" menu-close="" ui-sref="t_menu.thread_view">Messages</ion-item>
+
+                <div style="width: 285px; height: 60px;" class="spacer"></div>
+                <ion-item style="" ng-click="LogOut()">Log Out</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

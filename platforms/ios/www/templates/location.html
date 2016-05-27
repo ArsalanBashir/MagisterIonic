@@ -1,0 +1,16 @@
+<ion-header-bar>
+  <button class="save-settings-button button button-clear button-positive" ng-click="SkipLocation()">Skip</button>
+  <h1 class="title">Setup Location</h1>
+  <button class="save-settings-button button button-clear button-positive" ng-disabled="ShouldBeDisabled()" ng-click="FindMe()"><i class="icon ion-ios-navigate" style="color: #D9B66E;"></i></button>
+</ion-header-bar>
+<ion-nav-view>
+<ion-view title="Setup Location">
+  <div id="map" data-tap-disabled="true">
+
+  </div>
+  <div class="map-fixed-marker-magister"><i class="ion-ios-location"></i></div>
+</ion-view>
+<ion-footer-bar class="bar-magister" ng-click="SaveLocation()">
+  <p class="title" style="color: #FFF;">Save and Continue<p>
+</ion-footer-bar>
+</ion-nav-view>

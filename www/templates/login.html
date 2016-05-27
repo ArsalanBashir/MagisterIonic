@@ -1,0 +1,25 @@
+<ion-header-bar>
+  <h1 class="title">Log Into Magister</h1>
+</ion-header-bar>
+<ion-nav-view>
+  <ion-view title="Log In">
+      <ion-content overflow-scroll="true" padding="true" scroll="false" class="has-header">
+          <div class="spacer" style="width: 300px; height: 26px;"></div>
+          <form class="list" ng-submit="login()">
+            <div class="list">
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Email Address</span>
+                <input type="email" placeholder="Email Address" ng-model="session_data.email" required="required">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Password" ng-model="session_data.password" required="required">
+              </label>
+            </div>
+            <div class="spacer" style="width: 300px; height: 26px;"></div>
+            <input type="submit" name="submit" id="logIn-button2" class="button button-magister button-block" value="Log In">
+          </form>
+          <a href="#/signup" class="sub-optionbtn button-block">Need an account?</a>
+      </ion-content>
+  </ion-view>
+<ion-nav-view>
